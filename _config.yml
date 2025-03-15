@@ -1,4 +1,4 @@
-title: My Blog
+title: My Blog123
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -16,4 +16,58 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   
-minimal_mistakes_skin: "default"
+minimal_mistakes_skin: "air"
+
+
+
+# Site
+author:
+  name: "YongMin Park "
+  avatar: "/assets/profile/profile.jpg"  
+  bio: "안녕하세요 bio 태그입니다."
+  email: "pym6300@gmail.com"
+  link:
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/a4v5df"
+  location : "Seoul, Republic of Korea"
+
+
+# Header navigation (상단 메뉴; 필요에 따라 사이드바에서도 활용 가능)
+header:
+  nav:
+    - title: "Home"
+      url: "/"
+    - title: "Categories"
+      url: "/categories/"
+    - title: "DevOps"
+      url: "/categories/devops/"
+    - title: "Cloud"
+      url: "/categories/cloud/"
+    - title: "Container"
+      url: "/categories/container/"
+
+# Defaults: 공통 Front Matter 설정
+defaults:
+  # 모든 'pages' (정적 페이지, 예: About, 카테고리 인덱스, 홈 페이지)용 기본값
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single           # 사이드바가 포함된 단일 페이지 레이아웃
+      author_profile: true      # 사이드바에 Author 정보 표시
+      toc: true             # 사이드바에 목차 표시
+      sidebar:
+        - nav: "sidebar-category"
+
+  # 모든 'posts' (블로그 포스트)용 기본값
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single             # 포스트 전용 레이아웃
+      author_profile: false
+      toc: true 
+      sidebar:     # 포스트 페이지에서는 사이드바를 숨김 (본문만 집중)
+        nav: "sidebar-category"
+# enable_copy_code_button: true
