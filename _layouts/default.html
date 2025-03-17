@@ -1,0 +1,86 @@
+<!doctype html>
+{% include copyright.html %}
+<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
+    {% include_cached skip-links.html %}
+    {% include_cached masthead.html %}
+
+    <div class="initial-content">
+      {{ content }}
+      {% include after-content.html %}
+    </div>
+
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top">
+      <i class="fas fa-angle-up fa-2x"></i>
+    </button>
+
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+    
+    <!-- Back to Top JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var btn = document.getElementById("back-to-top");
+
+        window.addEventListener("scroll", function() {
+          if (window.scrollY > 300) { // 300px 이상 스크롤 시 표시
+            btn.style.display = "block";
+          } else {
+            btn.style.display = "none";
+          }
+        });
+
+        btn.addEventListener("click", function() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      });
+    </script>
+
+    <style>
+      #back-to-top {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      }
+
+      #back-to-top:hover {
+        background-color: #555;
+      }
+
+      #back-to-top i {
+        line-height: 50px;
+      }
+    </style>
+
+  </body>
+</html>

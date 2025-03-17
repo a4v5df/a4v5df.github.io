@@ -1,5 +1,5 @@
 ---
-title: "Devops"
+title: "DevOps"
 layout: archive
 permalink: /devops
 ---

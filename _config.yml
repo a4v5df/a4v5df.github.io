@@ -1,5 +1,5 @@
-title: My Blog123
-email: your-email@example.com
+title: YongMin Park Blog
+email: pym6300@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -24,14 +24,13 @@ minimal_mistakes_skin: "air"
 author:
   name: "YongMin Park "
   avatar: "/assets/profile/profile.jpg"  
-  bio: "안녕하세요 bio 태그입니다."
+  bio: ""
   email: "pym6300@gmail.com"
-  link:
+  links:
       - label: "GitHub"
         icon: "fab fa-fw fa-github"
         url: "https://github.com/a4v5df"
   location : "Seoul, Republic of Korea"
-
 
 # Header navigation (상단 메뉴; 필요에 따라 사이드바에서도 활용 가능)
 header:
@@ -67,7 +66,8 @@ defaults:
     values:
       layout: single             # 포스트 전용 레이아웃
       author_profile: false
-      toc: true 
-      sidebar:     # 포스트 페이지에서는 사이드바를 숨김 (본문만 집중)
+      toc: true
+      toc_label: "Table of Contents" 
+      toc_sticky: true
+      sidebar:     
         nav: "sidebar-category"
-# enable_copy_code_button: true

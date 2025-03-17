@@ -13,14 +13,26 @@ sidebar-category:
         url:  "/container"
         category: "container"
 
+      - title: "Flutter"
+        url:  "/flutter"
+        category: "flutter"
+      
+      - title: "Software Engineering"
+        url:  "/software-engineering"
+        category: "software-engineering"
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+  - title: "Home"
+    url: /
+  - title: "Category"
+    url: /categories/
+    children:
+      - title: "DevOps"
+        url: /categories/devops/
+      - title: "Cloud"
+        url: /categories/cloud/
+      - title: "Container"
+        url: /categories/container/
+      - title: "Flutter"
+        url: /categories/flutter/
+      - title: "Blockchain"
+        url: /categories/blockchain/
