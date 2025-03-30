@@ -4,7 +4,6 @@ date: 2025-03-15
 categories: [cloud]
 math: true
 excerpt: "Azureのデプロイスロットを利用したCI/CD環境の構築方法と、サーバーレスアーキテクチャ（Azure Functions）の概要および実習手順を整理しました。"
-
 ---
 
 # デプロイスロット概要

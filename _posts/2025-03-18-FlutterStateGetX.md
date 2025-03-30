@@ -3,6 +3,7 @@ title: Flutter 状態管理の概念と GetX 学習レポート
 date: 2025-03-18
 categories: [flutter]
 math: true
+excerpt: Flutterの状態管理の基本概念とGetXを使ったリアクティブな状態管理手法を学習
 ---
 
 ## 1. 状態管理 (State Management)

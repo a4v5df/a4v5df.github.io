@@ -3,6 +3,7 @@ title: OOP, デザインパターン, UML, ソフトウェア工学の概念整�
 date: 2025-03-18
 categories: [software-engineering]
 math: true
+excerpt: オブジェクト指向プログラミング(OOP)、GoFデザインパターン、UMLの各種ダイアグラム、およびソフトウェア工学の基礎概念を学習し整理しました。
 ---
 
 ## 1. オブジェクト指向プログラミング(OOP)

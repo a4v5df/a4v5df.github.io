@@ -3,6 +3,7 @@ title: Flutter Gestureの学習
 date: 2025-03-18
 categories: [flutter]
 math: true
+excerpt: Flutterのジェスチャー処理の仕組みとGesture Arenaによる衝突解決を学んだ内容をまとめました。
 ---
 
 ## 1. 概要

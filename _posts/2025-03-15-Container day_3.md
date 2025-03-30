@@ -4,7 +4,6 @@ date: 2025-03-15
 categories: [container]
 math: true
 excerpt: DockerやAzureを利用したDevOpsの基本概念と、開発・運用を統合して自動化を促進するための組織構造やGitのブランチ管理方法を学びます。
-
 ---
 
 # Azure Container Instance (ACI)
@@ -89,7 +88,7 @@ IACを使用して、共同予約グループに1つのテンプレートで複�
 ```
 #1. Azureポータル全体で「App Services」を検索
 #2. App Servicesブレードで[+作成]
-*言及していない項目はすべてデフォルト値を使用。
+言及していない項目はすべてデフォルト値を使用。
 [基本事項]
 -リソースグループ: rg-containerlab-[SUFFIX]
 -名前: app-gb-[SUFFIX]
@@ -104,9 +103,7 @@ IACを使用して、共同予約グループに1つのテンプレートで複�
 -イメージタグ: v1
 [モニタリングとセキュリティ]
 -Application Insights: いいえ
-
 #3. テスト
-
 #4. DAY1のdocker-compose.ymlを使用してWordPressをデプロイする
 ```
 

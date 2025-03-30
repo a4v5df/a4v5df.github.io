@@ -4,7 +4,6 @@ date: 2025-03-15
 categories: [cloud]
 math: true
 excerpt: "Azureのインフラストラクチャ基礎としてクラウドコンピューティングの特徴、サービスモデル（IaaS、PaaS、SaaS）の違い、Azureリソース管理（リソースグループ、RBAC）および仮想ネットワーク設計の基本をまとめました。"
-
 ---
 
 # クラウドコンピューティング
