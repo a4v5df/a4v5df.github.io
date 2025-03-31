@@ -23,6 +23,8 @@ sidebar-category:
 main:
   - title: "Home"
     url: /
+  - title: "Portfolio"
+    url: /assets/pdf/portfolio.pdf
   - title: "Category"
     url: /categories/
     children:
